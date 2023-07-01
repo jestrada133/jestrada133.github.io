@@ -1,95 +1,211 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Jordan Estrada - Portfolio</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+    <title>Jordan Estrada - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        nav ul {
+            display: inline-block;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 1em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        main {
+            padding: 1em;
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            margin-bottom: 1em;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.5em 1em;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+
+        .btn:hover {
+            background-color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer li {
+            margin: 0 0.5em;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
-	<header>
-		<h1>Jordan Estrada</h1>
-		<nav>
-			<ul>
-				<li><a href="#about">About Me</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#blog">Blog</a></li>
-				<li><a href="#contact">Contact Me</a></li>
-			</ul>
-		</nav>
-	</header>
+<header>
+    <h1>Jordan Estrada</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+</header>
 
-	<main>
-		<section id="about">
-			<h2>About Me</h2>
-			<p>I am a driven computer science student pursuing a Bachelor's degree. I am passionate about coding, building games, and developing innovative software solutions. With my degree, I will leverage my technical skills and work ethic to launch a successful career as a programmer.</p>
-		</section>
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a driven computer science student pursuing a Bachelor's degree. I am passionate about coding, building games, and developing innovative software solutions. With my degree, I will leverage my technical skills and work ethic to launch a successful career as a programmer.</p>
+    </section>
 
-		<section id="projects">
-			<h2>Projects</h2>
-			<ul>
-				<li>
-					<h3>Project 1</h3>
-					<p>Description of project 1</p>
-					<a href="#">Live Demo</a>
-					<a href="#">GitHub Repo</a>
-				</li>
-				<li>
-					<h3>Project 2</h3>
-					<p>Description of project 2</p>
-					<a href="#">Live Demo</a>
-					<a href="#">GitHub Repo</a>
-				</li>
-			</ul>
-		</section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>Project 1</h3>
+                <p>Description of project 1</p>
+                <div>
+                    <a class="btn" href="#">Live Demo</a>
+                    <a class="btn" href="#">GitHub Repo</a>
+                </div>
+            </li>
+            <li>
+                <h3>Project 2</h3>
+                <p>Description of project 2</p>
+                <div>
+                    <a class="btn" href="#">Live Demo</a>
+                    <a class="btn" href="#">GitHub Repo</a>
+                </div>
+            </li>
+        </ul>
+    </section>
 
-		<section id="skills">
-			<h2>Skills</h2>
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JavaScript</li>
-				<li>jQuery</li>
-				<li>Bootstrap</li>
-				<li>PHP</li>
-				<li>MySQL</li>
-			</ul>
-		</section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>Bootstrap</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+        </ul>
+    </section>
 
-		<section id="blog">
-			<h2>Blog</h2>
-			<ul>
-				<li>
-					<h3>Blog Post Title</h3>
-					<p>Date of blog post</p>
-					<a href="#">Read More</a>
-				</li>
-			</ul>
-		</section>
+    <section id="blog">
+        <h2>Blog</h2>
+        <ul>
+            <li>
+                <h3>Blog Post Title</h3>
+                <p>Date of blog post</p>
+                <a href="#">Read More</a>
+            </li>
+        </ul>
+    </section>
 
-		<section id="contact">
-			<h2>Contact Me</h2>
-			<form action="submit.php" method="post" id="contact-form">
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required>
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required>
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" required></textarea>
-				<input type="submit" value="Send Message">
-			</form>
-		</section>
-	</main>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="submit.php" method="post" id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input class="btn" type="submit" value="Send Message">
+        </form>
+    </section>
+</main>
 
-	<footer>
-		<ul>
-			<li><a href="#">LinkedIn</a></li>
-			<li><a href="#">GitHub</a></li>
-			<li><a href="#">Twitter</a></li>
-		</ul>
-	</footer>
+<footer>
+    <ul>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Twitter</a></li>
+    </ul>
+</footer>
 
-	<script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
