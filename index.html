@@ -9,40 +9,54 @@
 </head>
 
 <body>
-  <header>
-    <h1>Jordan Estrada</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="https://github.com/your-github-profile">GitHub</a></li>
-        <li><a href="https://your-itchio-profile">itch.io</a></li>
-        <li><a href="https://leetcode.com/jestrada133/">LeetCode</a></li>
-      </ul>
-    </nav>
+  <nav class="navbar">
+    <div class="logo">Jordan Estrada</div>
+    <ul class="nav-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="https://github.com/your-github-profile">GitHub</a></li>
+      <li><a href="https://your-itchio-profile">itch.io</a></li>
+      <li><a href="https://leetcode.com/jestrada133/">LeetCode</a></li>
+    </ul>
+    <div class="hamburger">&#9776;</div>
+  </nav>
+
+  <header id="about">
+    <h1>About Me</h1>
+    <p>Insert your introduction and information about your background and skills here.</p>
   </header>
 
   <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Insert your introduction and information about your background and skills here.</p>
-    </section>
-
     <section id="skills">
       <h2>Skills</h2>
-      <div class="skill-bar">
-        <div class="bar" style="width: 70%;">Python (70%)</div>
+      <div class="skill">
+        <div class="skill-name">Python</div>
+        <div class="skill-progress">
+          <div class="progress" style="width: 70%;"></div>
+        </div>
       </div>
-      <div class="skill-bar">
-        <div class="bar" style="width: 70%;">HTML & CSS (70%)</div>
+      <div class="skill">
+        <div class="skill-name">HTML & CSS</div>
+        <div class="skill-progress">
+          <div class="progress" style="width: 70%;"></div>
+        </div>
       </div>
-      <div class="skill-bar">
-        <div class="bar" style="width: 30%;">Web Development (30%)</div>
+      <div class="skill">
+        <div class="skill-name">Web Development</div>
+        <div class="skill-progress">
+          <div class="progress" style="width: 30%;"></div>
+        </div>
       </div>
-      <div class="skill-bar">
-        <div class="bar" style="width: 60%;">Game Design (60%)</div>
+      <div class="skill">
+        <div class="skill-name">Game Design</div>
+        <div class="skill-progress">
+          <div class="progress" style="width: 60%;"></div>
+        </div>
       </div>
-      <div class="skill-bar">
-        <div class="bar" style="width: 90%;">Communication (90%)</div>
+      <div class="skill">
+        <div class="skill-name">Communication</div>
+        <div class="skill-progress">
+          <div class="progress" style="width: 90%;"></div>
+        </div>
       </div>
     </section>
   </main>
@@ -50,6 +64,8 @@
   <footer>
     <p>&copy; 2023 Jordan Estrada</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
