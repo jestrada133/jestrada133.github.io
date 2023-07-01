@@ -5,207 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-color: #f8f8f8;
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-
-        nav {
-            text-align: center;
-            margin-top: 1em;
-        }
-
-        nav ul {
-            display: inline-block;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav li {
-            display: inline-block;
-            margin: 0 1em;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-
-        main {
-            padding: 1em;
-        }
-
-        section {
-            margin-bottom: 2em;
-        }
-
-        h2 {
-            font-size: 2em;
-            margin-bottom: 0.5em;
-            text-align: center;
-        }
-
-        p {
-            line-height: 1.5;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        ul li {
-            margin-bottom: 1em;
-        }
-
-        a {
-            color: #333;
-            text-decoration: none;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.5em 1em;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 3px;
-        }
-
-        .btn:hover {
-            background-color: #666;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-
-        footer ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        footer li {
-            margin: 0 0.5em;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-    </style>
 </head>
 <body>
-<header>
-    <h1>Jordan Estrada</h1>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h1 class="neon">Jordan Estrada</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a driven computer science student pursuing a Bachelor's degree. I am passionate about coding, building games, and developing innovative software solutions. With my degree, I will leverage my technical skills and work ethic to launch a successful career as a programmer.</p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a driven computer science student pursuing a Bachelor's degree. I am passionate about coding, building games, and developing innovative software solutions. With my degree, I will leverage my technical skills and work ethic to launch a successful career as a programmer.</p>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <h3>Project 1</h3>
-                <p>Description of project 1</p>
-                <div>
-                    <a class="btn" href="#">Live Demo</a>
-                    <a class="btn" href="#">GitHub Repo</a>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Itch.io Game</h3>
+                    <p>Description of your itch.io game.</p>
+                    <div>
+                        <a class="btn neon neon-animation pulse-animation" href="#">Live Demo</a>
+                        <a class="btn neon neon-animation pulse-animation" href="https://leetcode.com/jestrada133/">GitHub Repo</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="bar-graph">
+                <div class="bar">
+                    <div class="bar-fill" style="width: 70%;"></div>
                 </div>
-            </li>
-            <li>
-                <h3>Project 2</h3>
-                <p>Description of project 2</p>
-                <div>
-                    <a class="btn" href="#">Live Demo</a>
-                    <a class="btn" href="#">GitHub Repo</a>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 70%;"></div>
                 </div>
-            </li>
-        </ul>
-    </section>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 30%;"></div>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 60%;"></div>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill" style="width: 90%;"></div>
+                </div>
+            </div>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
+        <section id="blog">
+            <h2>Blog</h2>
+            <ul>
+                <li>
+                    <h3>Blog Post Title</h3>
+                    <p>Date of blog post</p>
+                    <a href="#">Read More</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="submit.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input class="btn neon neon-animation pulse-animation" type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+
+    <footer>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
-            <li>Bootstrap</li>
-            <li>PHP</li>
-            <li>MySQL</li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
         </ul>
-    </section>
+    </footer>
 
-    <section id="blog">
-        <h2>Blog</h2>
-        <ul>
-            <li>
-                <h3>Blog Post Title</h3>
-                <p>Date of blog post</p>
-                <a href="#">Read More</a>
-            </li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="submit.php" method="post" id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <input class="btn" type="submit" value="Send Message">
-        </form>
-    </section>
-</main>
-
-<footer>
-    <ul>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">Twitter</a></li>
-    </ul>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
