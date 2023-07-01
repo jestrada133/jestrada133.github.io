@@ -81,7 +81,6 @@ form input[type="submit"] {
     background-color: #666;
   }
   
-  /* Style the image gallery */
   .gallery {
     display: flex;
     flex-wrap: wrap;
